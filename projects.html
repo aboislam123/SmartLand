@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <title>Smart Land - المشاريع</title>
+    <style>
+
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: "Tajawal", sans-serif; background-color: #f9f9f9; color: #444; }
+        .header { width: 100%; height: 110px; background-color: #043837; border-bottom: #087A79 solid 8px; display: flex; align-items: center; justify-content: space-between; padding: 0 50px; }
+        .company-name { color: white; font-size: 25px; font-weight: 600; }
+        #menu { display: flex; gap: 10px; align-items: center; }
+        #menu .btn { color: white; text-decoration: none; padding: 9px 14px; border-radius: 10px; transition: background 0.3s; }
+        #menu .btn:hover { background-color: rgba(255, 255, 255, 0.15); }
+        #menu .active { background-color: #087A79; }
+        #main-body { max-width: 1100px; margin: 50px auto; padding: 0 25px; }
+        .page-title { text-align: center; color: #043837; margin-bottom: 45px; }
+        .page-title h1 { font-size: 34px; margin-bottom: 10px; }
+        .page-title p { color: #777; font-size: 17px; }
+        .card-img { width: 100%; height: 100%; object-fit: cover; background-color: #000; display: block; }
+        .cta { text-align: center; margin: 45px 0; }
+        .cta a { display: inline-block; background-color: #087A79; color: white; text-decoration: none; padding: 13px 30px; border-radius: 7px; font-size: 17px; transition: background 0.3s; }
+        .cta a:hover { background-color: #043837; }
+        #footer { background: #043837; width: 100%; height: 80px; display: flex; justify-content: center; align-items: center; color: white; margin-top: 60px; }
+        #footer h5 { font-weight: 400; }
+
+        html { scroll-behavior: smooth; }
+        .project { display: flex; background: white; border-radius: 12px; border-right: 5px solid #087A79; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; margin-bottom: 30px; scroll-margin-top: 30px; transition: transform 0.3s; }
+        .project:hover { transform: translateY(-4px); }
+        .project:target { box-shadow: 0 0 0 3px #087A79, 0 2px 8px rgba(0,0,0,0.08); }
+        .project-img { width: 42%; min-height: 260px; flex-shrink: 0; background: #000; }
+        .project-info { padding: 30px; flex: 1; }
+        .tag { display: inline-block; background: #e3f2f2; color: #087A79; font-size: 14px; padding: 4px 12px; border-radius: 20px; margin-bottom: 12px; }
+        .project-info h2 { color: #087A79; margin: 0 0 12px; font-size: 26px; }
+        .project-info p { font-size: 17px; line-height: 2; color: #555; margin: 0 0 15px; }
+        .project-info ul { margin: 0; padding-right: 20px; color: #555; line-height: 2; }
+        @media (max-width: 700px) {
+            .header { height: auto; padding: 20px; flex-direction: column; gap: 15px; }
+            #menu { flex-wrap: wrap; justify-content: center; }
+            .page-title h1 { font-size: 28px; }
+            .project { flex-direction: column; }
+            .project-img { width: 100%; min-height: 200px; height: 200px; }
+            .project-info { padding: 22px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="company-name">Smart Land</div>
+        <div id="menu">
+            <a href="index.html" class="btn">الرئيسية</a>
+            <a href="about.html" class="btn">من نحن</a>
+            <a href="services.html" class="btn ">الخدمات</a>
+            <a href="projects.html" class="btn active">المشاريع</a>
+            <a href="contact.html" class="btn">تواصل معنا</a>
+        </div>
+    </div>
+
+    <div id="main-body">
+        <div class="page-title">
+            <h1>مشاريعنا</h1>
+            <p>نماذج من الحلول التقنية التي طورناها لخدمة المؤسسات والأفراد</p>
+        </div>
+
+        <div class="project" id="smart-signal">
+            <div class="project-img"><img class="card-img" src="smart-signal.webp" alt="Smart Signal"></div>
+            <div class="project-info">
+                <span class="tag">ذكاء اصطناعي</span>
+                <h2>Smart Signal</h2>
+                <p>تطبيق لترجمة لغة الإشارة إلى نصوص وأصوات باستعمال الذكاء الاصطناعي، يهدف إلى تسهيل التواصل مع الصم والبكم وتعزيز دمجهم في المجتمع.</p>
+                <ul>
+                    <li>التعرف على حركات لغة الإشارة</li>
+                    <li>تحويل الإشارات إلى نص مكتوب</li>
+                    <li>تحويل النص إلى صوت مسموع</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project" id="mykey">
+            <div class="project-img"><img class="card-img" src="mykey.webp" alt="MyKey"></div>
+            <div class="project-info">
+                <span class="tag">منصة إعلانات</span>
+                <h2>MyKey</h2>
+                <p>منصة للإعلان عن العقارات والمركبات المعروضة للبيع والإيجار، تجمع البائعين والمشترين في مكان واحد بتجربة بحث سهلة وواضحة.</p>
+                <ul>
+                    <li>نشر إعلانات العقارات والمركبات</li>
+                    <li>بحث وتصفية متقدمة</li>
+                    <li>تواصل مباشر بين الأطراف</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="project" id="sada">
+            <div class="project-img"><img class="card-img" src="sada.webp" alt="Sada"></div>
+            <div class="project-info">
+                <span class="tag">تعليم إلكتروني</span>
+                <h2>منصة Sada</h2>
+                <p>منصة تعليمية متطورة للتعلم عن بُعد، توفر بيئة تفاعلية تجمع المعلمين والطلاب وتسهّل الوصول إلى المحتوى التعليمي في أي وقت.</p>
+                <ul>
+                    <li>دورات ومحتوى تعليمي منظم</li>
+                    <li>متابعة تقدم الطلاب</li>
+                    <li>واجهة سهلة الاستخدام</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="cta"><a href="contact.html">لديك فكرة مشروع؟ تواصل معنا</a></div>
+    </div>
+
+    <div id="footer">
+        <h5>جميع الحقوق محفوظة - شركة Smart Land © 2026</h5>
+    </div>
+</body>
+</html>

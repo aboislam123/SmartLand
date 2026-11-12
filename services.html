@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <title>Smart Land - الخدمات</title>
+    <style>
+
+        * { box-sizing: border-box; }
+        body { margin: 0; font-family: "Tajawal", sans-serif; background-color: #f9f9f9; color: #444; }
+        .header { width: 100%; height: 110px; background-color: #043837; border-bottom: #087A79 solid 8px; display: flex; align-items: center; justify-content: space-between; padding: 0 50px; }
+        .company-name { color: white; font-size: 25px; font-weight: 600; }
+        #menu { display: flex; gap: 10px; align-items: center; }
+        #menu .btn { color: white; text-decoration: none; padding: 9px 14px; border-radius: 10px; transition: background 0.3s; }
+        #menu .btn:hover { background-color: rgba(255, 255, 255, 0.15); }
+        #menu .active { background-color: #087A79; }
+        #main-body { max-width: 1100px; margin: 50px auto; padding: 0 25px; }
+        .page-title { text-align: center; color: #043837; margin-bottom: 45px; }
+        .page-title h1 { font-size: 34px; margin-bottom: 10px; }
+        .page-title p { color: #777; font-size: 17px; }
+        .card-img { width: 100%; height: 100%; object-fit: cover; background-color: #000; display: block; }
+        .cta { text-align: center; margin: 45px 0; }
+        .cta a { display: inline-block; background-color: #087A79; color: white; text-decoration: none; padding: 13px 30px; border-radius: 7px; font-size: 17px; transition: background 0.3s; }
+        .cta a:hover { background-color: #043837; }
+        #footer { background: #043837; width: 100%; height: 80px; display: flex; justify-content: center; align-items: center; color: white; margin-top: 60px; }
+        #footer h5 { font-weight: 400; }
+
+        .services-grid { display: flex; justify-content: center; gap: 25px; flex-wrap: wrap; }
+        .service-card { background: white; width: 500px; max-width: 100%; border-radius: 12px; border-top: 5px solid #087A79; box-shadow: 0 2px 8px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.3s; }
+        .service-card:hover { transform: translateY(-5px); }
+        .service-img { height: 200px; background: #000; }
+        .service-body { padding: 25px; text-align: center; }
+        .service-body .icon { font-size: 34px; margin-bottom: 5px; }
+        .service-body h2 { color: #087A79; font-size: 22px; margin: 8px 0 12px; }
+        .service-body p { color: #555; font-size: 16px; line-height: 1.9; margin: 0; }
+        @media (max-width: 700px) {
+            .header { height: auto; padding: 20px; flex-direction: column; gap: 15px; }
+            #menu { flex-wrap: wrap; justify-content: center; }
+            .page-title h1 { font-size: 28px; }
+            .service-card { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="company-name">Smart Land</div>
+        <div id="menu">
+            <a href="index.html" class="btn">الرئيسية</a>
+            <a href="about.html" class="btn">من نحن</a>
+            <a href="services.html" class="btn active">الخدمات</a>
+            <a href="projects.html" class="btn ">المشاريع</a>
+            <a href="contact.html" class="btn">تواصل معنا</a>
+        </div>
+    </div>
+
+    <div id="main-body">
+        <div class="page-title">
+            <h1>خدماتنا</h1>
+            <p>حلول برمجية واستشارات تقنية مخصصة تلبي احتياجات مختلف القطاعات</p>
+        </div>
+
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-img"><img class="card-img" src="service-ai.webp" alt="حلول الذكاء الاصطناعي"></div>
+                <div class="service-body">
+                    <div class="icon">🤖</div>
+                    <h2>حلول الذكاء الاصطناعي</h2>
+                    <p>توظيف تقنيات الذكاء الاصطناعي في تطوير خدمات رقمية ذكية تحسّن الأداء وتوفر تجربة أفضل للمستخدم.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img"><img class="card-img" src="service-dev.webp" alt="تطوير المنصات والتطبيقات"></div>
+                <div class="service-body">
+                    <div class="icon">💻</div>
+                    <h2>تطوير المنصات والتطبيقات</h2>
+                    <p>تصميم وتطوير تطبيقات الويب والجوال والمنصات المتخصصة بواجهات سهلة وأداء عالٍ وقابلية للتطوير.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img"><img class="card-img" src="service-systems.webp" alt="الأنظمة الإدارية المتكاملة"></div>
+                <div class="service-body">
+                    <div class="icon">🏥</div>
+                    <h2>الأنظمة الإدارية المتكاملة</h2>
+                    <p>بناء أنظمة إدارية مخصصة تساعد المؤسسات على تنظيم عملياتها وأتمتة مهامها بكفاءة ومرونة.</p>
+                </div>
+            </div>
+
+            <div class="service-card">
+                <div class="service-img"><img class="card-img" src="service-consulting.webp" alt="الاستشارات التقنية"></div>
+                <div class="service-body">
+                    <div class="icon">📊</div>
+                    <h2>الاستشارات التقنية</h2>
+                    <p>فهم احتياجات العمل وتحليل التحديات وتقديم توصيات تقنية عملية تساعد على اتخاذ القرار الصحيح.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta"><a href="projects.html">رؤية مشاريعنا</a></div>
+    </div>
+
+    <div id="footer">
+        <h5>جميع الحقوق محفوظة - شركة Smart Land © 2026</h5>
+    </div>
+</body>
+</html>

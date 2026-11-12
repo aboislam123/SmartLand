@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Smart Land - من نحن</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: "Tajawal", sans-serif;
+            background-color: #f9f9f9;
+            color: #444;
+        }
+
+        .header {
+            width: 100%;
+            height: 110px;
+            background-color: #043837;
+            border-bottom: #087A79 solid 8px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 50px;
+        }
+
+        .company-name {
+            color: white;
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        #menu {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+
+        #menu .btn {
+            color: white;
+            text-decoration: none;
+            padding: 9px 14px;
+            border-radius: 10px;
+            transition: background 0.3s;
+        }
+
+        #menu .btn:hover {
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        #menu .active {
+            background-color: #087A79;
+        }
+
+        #main-body {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 25px;
+        }
+
+        .page-title {
+            text-align: center;
+            color: #043837;
+            margin-bottom: 45px;
+        }
+
+        .page-title h1 {
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        .page-title p {
+            color: #777;
+            font-size: 17px;
+        }
+
+        .about-section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 12px;
+            border-right: 5px solid #087A79;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        }
+
+        .about-section h2 {
+            color: #087A79;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 25px;
+        }
+
+        .about-section p {
+            font-size: 17px;
+            line-height: 2;
+            color: #555;
+            margin: 0;
+        }
+
+        .projects-button {
+            text-align: center;
+            margin: 45px 0;
+        }
+
+        .projects-button a {
+            display: inline-block;
+            background-color: #087A79;
+            color: white;
+            text-decoration: none;
+            padding: 13px 30px;
+            border-radius: 7px;
+            font-size: 17px;
+            transition: background 0.3s;
+        }
+
+        .projects-button a:hover {
+            background-color: #043837;
+        }
+
+        #footer {
+            background: #043837;
+            width: 100%;
+            height: 80px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            margin-top: 60px;
+        }
+
+        #footer h5 {
+            font-weight: 400;
+        }
+
+        @media (max-width: 700px) {
+
+            .header {
+                height: auto;
+                padding: 20px;
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            #menu {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .page-title h1 {
+                font-size: 28px;
+            }
+
+            .about-section {
+                padding: 22px;
+            }
+        }
+    
+        .video-section { max-width: 900px; margin: 50px auto 10px; text-align: center; }
+        .video-section h2 { color: #043837; font-weight: 500; font-size: 28px; margin-bottom: 20px; }
+        .video-wrap { background: #000; border-radius: 12px; border-bottom: 6px solid #087A79; box-shadow: 0 4px 14px rgba(0,0,0,0.18); overflow: hidden; }
+        .video-wrap video { display: block; width: 100%; height: auto; aspect-ratio: 16 / 9; }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+
+        <div class="company-name">
+            Smart Land
+        </div>
+
+        <div id="menu">
+
+            <a href="index.html" class="btn">
+                الرئيسية
+            </a>
+
+            <a href="about.html" class="btn active">
+                من نحن
+            </a>
+
+            <a href="services.html" class="btn">
+                الخدمات
+            </a>
+
+            <a href="projects.html" class="btn">
+                المشاريع
+            </a>
+
+            <a href="contact.html" class="btn">
+                تواصل معنا
+            </a>
+
+        </div>
+
+    </div>
+
+    <div id="main-body">
+
+        <div class="page-title">
+            <h1>من نحن</h1>
+
+            <p>
+                Smart Land للحلول والاستشارات التقنية
+            </p>
+        </div>
+
+        <div class="about-section">
+
+            <h2>من نحن؟</h2>
+
+            <p>
+                Smart Land هي شركة استشارات وحلول تقنية تأسست عام 2011،
+                وتهدف إلى تقديم حلول برمجية متطورة ومخصصة تلبي احتياجات
+                مختلف القطاعات. تعتمد الشركة في أعمالها على توظيف التقنيات
+                الحديثة والذكاء الاصطناعي لتطوير تطبيقات ومنصات تساعد
+                المؤسسات والأفراد على الاستفادة من التكنولوجيا بطريقة
+                عملية وفعالة.
+            </p>
+
+        </div>
+
+        <div class="about-section">
+
+            <h2>رؤيتنا</h2>
+
+            <p>
+                تتمثل رؤيتنا في بناء مستقبل تقني أكثر تطوراً من خلال تقديم
+                حلول رقمية مبتكرة وقابلة للتطوير، تساعد مختلف القطاعات على
+                مواجهة التحديات التقنية والاستفادة من الإمكانات المتقدمة
+                للتكنولوجيا والذكاء الاصطناعي.
+                <br><br>
+
+                نسعى إلى أن تكون Smart Land شريكاً تقنياً موثوقاً للمؤسسات
+                والأفراد، من خلال الجمع بين الخبرة البرمجية، والإبداع،
+                وفهم احتياجات المستخدمين، وتحويل الأفكار والتحديات إلى
+                حلول رقمية عملية تساهم في تحسين الأداء وتسهيل الوصول إلى
+                الخدمات.
+            </p>
+
+        </div>
+
+        <div class="about-section">
+
+            <h2>رسالتنا</h2>
+
+            <p>
+                تتمثل رسالتنا في تطوير حلول برمجية متكاملة ومخصصة تلبي
+                احتياجات عملائنا وتساعدهم على تحقيق أهدافهم باستخدام
+                التكنولوجيا الحديثة.
+                <br><br>
+
+                نعمل على تقديم تطبيقات ومنصات رقمية تجمع بين سهولة الاستخدام
+                والكفاءة والابتكار، مع الاستفادة من تقنيات الذكاء الاصطناعي
+                عندما تكون مناسبة لطبيعة الحل المطلوب.
+                كما نحرص على فهم المشكلة أو الحاجة قبل بناء الحل، حتى تكون
+                التكنولوجيا وسيلة حقيقية لإحداث قيمة وتحسين تجربة المستخدم.
+            </p>
+
+        </div>
+
+        <div class="about-section">
+
+            <h2>توجهاتنا</h2>
+
+            <p>
+                تركز Smart Land على مواكبة التطور المستمر في عالم التكنولوجيا
+                والتحول الرقمي، مع الاهتمام بتطوير حلول قادرة على التكيف مع
+                احتياجات القطاعات المختلفة.
+                <br><br>
+
+                ومن أهم توجهاتنا توظيف الذكاء الاصطناعي في تطوير الخدمات
+                الرقمية، وبناء منصات وتطبيقات متخصصة، وتقديم حلول تقنية
+                تساعد المؤسسات على تحسين عملياتها والوصول إلى خدمات أكثر
+                كفاءة ومرونة.
+                <br><br>
+
+                كما نؤمن بأن نجاح أي حل تقني لا يعتمد على التكنولوجيا وحدها،
+                وإنما على قدرته على حل مشكلة حقيقية وتقديم تجربة واضحة
+                ومفيدة للمستخدم.
+            </p>
+
+        </div>
+
+
+        <div class="video-section">
+            <h2>تعرّف على Smart Land</h2>
+            <div class="video-wrap">
+                <video controls preload="metadata" poster="video-poster.jpg">
+                    <source src="smartland-intro.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+            </div>
+        </div>
+
+        <div class="projects-button">
+
+            <a href="projects.html">
+                رؤية مشاريعنا
+            </a>
+
+        </div>
+
+    </div>
+
+    <div id="footer">
+
+        <h5>
+            جميع الحقوق محفوظة - شركة Smart Land © 2026
+        </h5>
+
+    </div>
+
+</body>
+</html>
